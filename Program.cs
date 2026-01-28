@@ -32,7 +32,7 @@ public class Program
         //teacher.Salary = 50000;
         //Console.WriteLine();
         //teacher.Display();
-        Console.WriteLine("-----------------------------------------");
+        //Console.WriteLine("-----------------------------------------");
 
 
         //MethodHiding m = new MethodHiding();
@@ -44,16 +44,20 @@ public class Program
         //d.Display();
         //md.Display();
 
-        Pollymorphism[] poly = new Pollymorphism[4];
+        //Pollymorphism[] poly = new Pollymorphism[4];
 
-        poly[0] = new Pollymorphism();
-        poly[1] = new Example();
-        poly[2] = new Example2();
-        poly[3] = new Example3();
+        //poly[0] = new Pollymorphism();
+        //poly[1] = new Example();
+        //poly[2] = new Example2();
+        //poly[3] = new Example3();
 
-        foreach (var p in poly)
-        {
-            p.Display();
-        }
+        //foreach (var p in poly)
+        //{
+        //    p.Display();
+        //}
+
+        MethodOverloading mo = new MethodOverloading();
+        mo.Add(10, 20);
+        mo.Add(10,20, 30);
     }
 }
