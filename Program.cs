@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using _21_30;
+using static _21_30.Pollymorphism;
 
 public class Program
 {
@@ -34,13 +35,25 @@ public class Program
         Console.WriteLine("-----------------------------------------");
 
 
-        MethodHiding m = new MethodHiding();
-        DerivedClass d = new DerivedClass();
-        MethodHiding md = new DerivedClass();
+        //MethodHiding m = new MethodHiding();
+        //DerivedClass d = new DerivedClass();
+        //MethodHiding md = new DerivedClass();
 
 
-        m.Display();
-        d.Display();
-        md.Display();
+        //m.Display();
+        //d.Display();
+        //md.Display();
+
+        Pollymorphism[] poly = new Pollymorphism[4];
+
+        poly[0] = new Pollymorphism();
+        poly[1] = new Example();
+        poly[2] = new Example2();
+        poly[3] = new Example3();
+
+        foreach (var p in poly)
+        {
+            p.Display();
+        }
     }
 }
